@@ -6,7 +6,7 @@
 }
 :root {
     --clr-white: #f3f3f3;
-    --clr-offWhite: #d7d7d7;
+    --clr-offWhite: #cdcdcd;
     --clr-darkBlue: #08232c;
     --clr-lightTeal: #123642;
     --clr-darkTeal: #062f3d;
@@ -19,15 +19,12 @@ body {
     background-color: var(--clr-darkTeal);
     cursor: default;
 }
-/* nav */
-nav {
-    position: relative;
-}
+/* logo */
 .logo {
     position: absolute;
     top: .75rem;
     left: 1rem;
-    font-size: clamp(1.15rem, 3vw, 1.35rem);
+    font-size: clamp(1rem, 3vw, 1.2rem);
     font-family: "Cinzel", serif;
     z-index: 1;
 }
@@ -139,4 +136,5 @@ footer .container .section ul li {
     font-size: clamp(1rem, 3vw, 1.1rem);
     list-style: none;
     margin: 10px auto;
+    cursor: pointer;
 }
