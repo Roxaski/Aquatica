@@ -58,6 +58,9 @@ body {
     width: 100%;
     min-height: 100vh;
     object-fit: cover;
+    mask-image: linear-gradient(180deg, 
+    rgba(0, 0, 0, 1) 70%, 
+    transparent 90%);
 }
 .hero .turtle {
     width: 100%;
@@ -71,7 +74,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 .grid-container img {
     width: 100%;
