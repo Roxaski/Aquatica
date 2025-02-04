@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Didact+Gothic&family=Paytone+One&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --clr-white: #f3f3f3;
+    --clr-offWhite: #d7d7d7;
+    --clr-darkBlue: #08232c;
+    --clr-lightTeal: #123642;
+    --clr-darkTeal: #062f3d;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: "Didact Gothic", serif;
+    color: var(--clr-white);
+    background-color: var(--clr-darkTeal);
+    cursor: default;
+}
+/* nav */
+nav {
+    position: relative;
+}
+.logo {
+    position: absolute;
+    top: .75rem;
+    left: 1rem;
+    font-size: clamp(1.15rem, 3vw, 1.35rem);
+    font-family: "Cinzel", serif;
+    z-index: 1;
+}
+/* hero */
+.hero img {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+.hero .turtle {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    inset: 0;
+}
+/* main */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.grid-container img {
+    width: 100%;
+    height: auto;
+}
+.grid-container h2 {
+    text-transform: capitalize;
+    letter-spacing: .65px;
+    font-family: "Paytone One", serif;
+    font-weight: 300;
+    font-size: clamp(1.3rem, 3vw, 1.5rem);
+}
+.grid-container p {
+    font-size: clamp(1rem, 3vw, 1.1rem);
+    line-height: 1.6;
+    margin: 15px auto 0;
+}
+.grid-container .right h2,
+.grid-container .right p {
+    margin-right: 1rem;
+}
+.grid-container .left h2,
+.grid-container .left p {
+    margin-left: 1rem;
+}
+/* banner */
+.banner {
+    margin: 1rem auto;
+    text-align: center;
+    width: 100%;
+    background: var(--clr-darkBlue);
+    padding: 10rem;
+}
+.banner h2 {
+    font-family: "Paytone One", serif;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.banner p {
+    font-size: clamp(1.12rem, 3vw, 1.3rem);
+    letter-spacing: .5px;
+    margin: 10px auto;
+}
+/* horizontal scroll */
+.horizontal-scroll {
+    margin: 1rem auto;
+    text-align: center;
+    width: 100%;
+    background: var(--clr-darkBlue);
+    padding: 10rem;
+}
+.horizontal-scroll h2 {
+    font-family: "Paytone One", serif;
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.horizontal-scroll p {
+    font-size: clamp(1rem, 3vw, 1.1rem);
+    letter-spacing: .5px;
+    margin: 10px auto;
+}
+/* footer */
+footer {
+    width: 100%;
+    height: auto;
+    background: var(--clr-lightTeal);
+    padding: 30px 0;
+}
+footer .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    justify-items: center;
+}
+footer .container .section {
+    text-transform: capitalize;
+    letter-spacing: .5px;
+}
+footer .container .section h3 {
+    font-size: clamp(1rem, 3vw, 1.2rem);
+}
+footer .container .section ul li {
+    color: var(--clr-offWhite);
+    font-size: clamp(1rem, 3vw, 1.1rem);
+    list-style: none;
+    margin: 10px auto;
+}
