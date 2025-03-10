@@ -26,6 +26,6 @@ window.addEventListener('scroll', () => {
 window.addEventListener('scroll', () => {
     let value = window.scrollY;
 
-    turtle.style.top = value * -1 + 'px';
-    turtle.style.left = value * .75 + 'px';
+    turtle.style.top = value * -1.15 + 'px';
+    turtle.style.left = value * .95 + 'px';
 });
