@@ -22,10 +22,10 @@ window.addEventListener('scroll', () => {
     }
 });
 
-//parallax turtle
+//parallax turtle on scroll
 window.addEventListener('scroll', () => {
     let value = window.scrollY;
 
-    turtle.style.top = value * -.75 + 'px';
+    turtle.style.top = value * -1 + 'px';
     turtle.style.left = value * .75 + 'px';
 });
