@@ -1,9 +1,10 @@
 let logoSmall = document.querySelector('.logo-small');
 let logoLarge = document.querySelector('.logo-large');
+let turtle = document.getElementById('turtle');
 
 //hides small logo on scroll
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 5) {
+    if (window.scrollY > 10) {
         logoSmall.classList.add("active");
     }
     else if (window.scrollY < 5) {
@@ -19,4 +20,12 @@ window.addEventListener('scroll', () => {
     else if (window.scrollY < 5) {
         logoLarge.classList.remove("active");
     }
+});
+
+//parallax turtle
+window.addEventListener('scroll', () => {
+    let value = window.scrollY;
+
+    turtle.style.top = value * -.75 + 'px';
+    turtle.style.left = value * .75 + 'px';
 });
