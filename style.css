@@ -22,22 +22,7 @@ body {
     cursor: default;
 }
 /* logo */
-.logo-small {
-    position: absolute;
-    top: .75rem;
-    left: 1.25rem;
-    font-size: clamp(1.75rem, 3vw, 2.5rem);
-    font-family: "Cinzel", serif;
-    visibility: visible;
-    opacity: 1;
-    transition: 200ms ease;
-    z-index: 1;
-}
-.logo-small.active {
-    visibility: hidden;
-    opacity: 0;
-}
-.logo-large {
+.logo {
     position: absolute;
     top: 65%;
     left: 30.5%;
@@ -49,7 +34,7 @@ body {
     transition: 350ms ease-out;
     z-index: 1;
 }
-.logo-large.active {
+.logo.active {
     visibility: visible;
     opacity: 1;
     transform: translateY(72px);
