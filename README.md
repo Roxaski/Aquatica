@@ -14,4 +14,4 @@ If anyone has any feedback i would greatly appreciate it, as i'm currently learn
 
 ## Image Credits
 
-Massive thankyou to all the amazing photographers at [unsplash](https://unsplash.com/), [pexels](https://www.pexels.com/) and [pixabay](https://pixabay.com/) your photos are incredible as always.
+Massive thankyou to all the amazing photographers at [unsplash](https://unsplash.com/), [pexels](https://www.pexels.com/) and [pixabay](https://pixabay.com/) your photos are incredible.
