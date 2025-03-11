@@ -149,8 +149,9 @@ header ul li:nth-child(3) {
     position: relative;
     top: 4rem;
     cursor: pointer;
-    z-index: 1;
     transform-style: preserve-3d;
+    transition: 250ms ease-in-out;
+    z-index: 1;
 }
 .banner .btn::before {
     content: '';
@@ -162,7 +163,14 @@ header ul li:nth-child(3) {
     background-color: var(--clr-oceanBlue);
     transform: translateZ(-10px) rotate(13deg);
     cursor: default;
+    transition: 250ms ease-in-out;
     z-index: -1;
+}
+.banner .btn:hover {
+    background: var(--clr-oceanBlue);
+}
+.banner .btn:hover::before {
+    background-color: var(--clr-lightTeal);
 }
 .banner .btn a {
     display: block;
