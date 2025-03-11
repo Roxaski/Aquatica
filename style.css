@@ -11,6 +11,7 @@
     --clr-darkBlue: #08232c;
     --clr-lightTeal: #123642;
     --clr-darkTeal: #062f3d;
+    --clr-oceanBlue: #473aac;
     --clr-seafoam: #afafd7;
 }
 body {
@@ -144,11 +145,26 @@ header ul li:nth-child(3) {
 }
 .banner .btn {
     display: inline-block;
-    background: var(--clr-lightTeal);
-    margin: 25px auto;
+    background: var(--clr-darkTeal);
+    position: relative;
+    top: 4rem;
     cursor: pointer;
+    z-index: 1;
+    transform-style: preserve-3d;
 }
-.banner a {
+.banner .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -5px;
+    width: 103px;
+    height: 45px;
+    background-color: var(--clr-oceanBlue);
+    transform: translateZ(-10px) rotate(13deg);
+    cursor: default;
+    z-index: -1;
+}
+.banner .btn a {
     display: block;
     color: var(--clr-white);
     padding: .75rem 1rem;
