@@ -11,7 +11,6 @@
     --clr-darkBlue: #08232c;
     --clr-lightTeal: #123642;
     --clr-darkTeal: #062f3d;
-    --clr-oceanWhite: #f2f3f4;
     --clr-oceanBlue: #473aac;
     --clr-seafoam: #afafd7;
 }
@@ -44,12 +43,12 @@ header ul li {
     position: relative;
     top: 1rem;
     left: 1rem;
-    padding-right: .75rem;
     display: inline-block;
     font-size: 1rem;
     font-weight: 500;
     color: var(--clr-white);
     text-transform: capitalize;
+    padding-right: .75rem;
     z-index: 3;
 }
 header ul li:nth-child(1),
