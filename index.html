@@ -22,14 +22,16 @@
         <ul>
             <li>login</li>
             <li>|</li>
-            <li>sign in</li>
+            <li>join</li>
+            <li>|</li>
+            <li>explore</li>
         </ul>
 
         <h1 class="logo">aquatica</h1>
     </header>
     <!-- hero -->
     <div class="hero">
-        <img draggable="false" class="bg" src="./assets/ocean_bg.webp" alt="ocean depths">
+        <img width="1920" height="1080" draggable="false" class="bg" src="./assets/ocean_bg.webp" alt="ocean depths">
         <img id="turtle" draggable="false" src="./assets/turtle.webp" alt="turtle">
     </div>
     <main>
@@ -169,6 +171,24 @@
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id amet ipsa soluta alias laudantium asperiores nemo nobis ut adipisci veritatis, aperiam officia fugit, itaque eos?</p>
             </div>
         </section>
+        <!-- ocean animations-->
+        <div class="waves-container">
+            <svg class="waves-svg" viewBox="0 25 150 20" preserveAspectRation="none" shape-rendering="auto">
+                <defs>
+                    <path id="wave-animation" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"/>
+                </defs>
+                <g class="waves-group">
+                    <use xlink:href="#wave-animation" x="48" y="0" fill="#385964"/>
+                    <use xlink:href="#wave-animation" x="48" y="0" fill="#123642"/>
+                    <use xlink:href="#wave-animation" x="48" y="5" fill="#094357"/>
+                    <use xlink:href="#wave-animation" x="48" y="7" fill="#102f39"/>
+                </g>
+            </svg>
+        </div>
+        <div class="shark-container">
+            <img class="shark shark-left" src="./assets/shark.svg" alt="">
+            <img class="shark shark-right" src="./assets/shark.svg" alt="">
+        </div>
         <!-- footer -->
         <footer>
             <div class="container">
