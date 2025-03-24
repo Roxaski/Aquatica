@@ -267,7 +267,7 @@ header ul li:nth-child(5) {
 .shark-left {
     position: relative;
     bottom: 4.2rem;
-    animation: shark-left 25s linear forwards infinite;
+    animation: shark-left 22s linear forwards infinite;
 }
 @keyframes shark-left {
     0% {
@@ -279,8 +279,8 @@ header ul li:nth-child(5) {
 }
 .shark-right {
     position: relative;
-    bottom: 5.5rem;
-    animation: shark-right 22s linear reverse infinite;
+    bottom: 5.05rem;
+    animation: shark-right 27s linear reverse infinite;
     z-index: -2;
 }
 @keyframes shark-right {
