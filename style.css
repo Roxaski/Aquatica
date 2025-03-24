@@ -291,26 +291,6 @@ header ul li:nth-child(5) {
     }
 }
 /* footer */
-
-
-/*
-footer .links ul li {
-    font-size: clamp(.8rem, 3vw, .9rem);
-    font-weight: 300;
-    text-transform: capitalize;
-    list-style: none;
-    margin: 10px auto 0;
-    letter-spacing: .5px;
-}
-footer .links ul li i {
-    margin-right: .3rem;
-}
-footer .links ul li a {
-    color: var(--clr-offWhite);
-    text-decoration: none;
-}
-
-*/
 footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
