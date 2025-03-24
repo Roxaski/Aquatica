@@ -35,7 +35,7 @@ body {
 ::-webkit-scrollbar-track {
     background-color: transparent;
 }
-/* login & sign in */
+/* header */
 header ul {
     position: absolute;
 }
@@ -44,8 +44,7 @@ header ul li {
     top: 1rem;
     left: 1rem;
     display: inline-block;
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: clamp(1.1rem, 3vw, 1.15rem);
     color: var(--clr-white);
     text-transform: capitalize;
     padding-right: .75rem;
@@ -292,35 +291,53 @@ header ul li:nth-child(5) {
     }
 }
 /* footer */
+
+
+/*
+footer .links ul li {
+    font-size: clamp(.8rem, 3vw, .9rem);
+    font-weight: 300;
+    text-transform: capitalize;
+    list-style: none;
+    margin: 10px auto 0;
+    letter-spacing: .5px;
+}
+footer .links ul li i {
+    margin-right: .3rem;
+}
+footer .links ul li a {
+    color: var(--clr-offWhite);
+    text-decoration: none;
+}
+
+*/
 footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
     width: 100%;
     height: auto;
     background: var(--clr-lightTeal);
     padding: 30px 0;
     box-shadow: 2px 2px 50px rgba(0, 0, 0, .7);
 }
-footer .container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    width: 100%;
-    justify-items: center;
-}
-footer .container .section {
+footer .section {
     text-transform: capitalize;
     letter-spacing: .5px;
     z-index: 3;
 }
-footer .container .section h3 {
+footer .section h3 {
+    color: var(--clr-white);
+    font-weight: 400;
     font-size: clamp(1rem, 3vw, 1.2rem);
 }
-footer .container .section ul li {
-    color: var(--clr-offWhite);
-    font-size: clamp(1rem, 3vw, 1.1rem);
+footer .section ul li {
     list-style: none;
-    margin: 10px auto;
+    color: var(--clr-offWhite);
+    font-size: clamp(1rem, 3vw, 1.05rem);
+    margin: 12px auto;
     cursor: pointer;
 }
-
 /* media query's
 @media screen and (max-width: 768px) {
     .waves {
