@@ -279,7 +279,7 @@ header ul li:nth-child(5) {
 }
 .shark-right {
     position: relative;
-    bottom: 5.05rem;
+    bottom: 4.95rem;
     animation: shark-right 27s linear reverse infinite;
     z-index: -2;
 }
