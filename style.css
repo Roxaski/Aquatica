@@ -135,6 +135,15 @@ header ul li:nth-child(5) {
     line-height: 1.8;
     margin: 10px auto;
 }
+.banner p span {
+    color: var(--clr-white);
+    font-weight: 300;
+}
+.banner a {
+    text-decoration-thickness: 1.5px;
+    text-transform: capitalize;
+    color: var(--clr-offWhite);
+}
 /* donate button */
 .banner .btn {
     display: inline-block;
@@ -207,7 +216,7 @@ header ul li:nth-child(5) {
 }
 /* ocean waves animation */
 .waves-container {
-    margin-top: 3.5rem;
+    margin-top: 3rem;
 }
 .waves-svg {
     position: relative;
