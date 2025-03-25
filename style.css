@@ -132,6 +132,7 @@ header ul li:nth-child(5) {
 .banner p {
     font-size: clamp(1.12rem, 3vw, 1.3rem);
     letter-spacing: .5px;
+    line-height: 1.8;
     margin: 10px auto;
 }
 /* donate button */
@@ -206,7 +207,7 @@ header ul li:nth-child(5) {
 }
 /* ocean waves animation */
 .waves-container {
-    margin-top: 5rem;
+    margin-top: 3.5rem;
 }
 .waves-svg {
     position: relative;
