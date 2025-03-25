@@ -52,6 +52,11 @@ header ul li {
     padding-right: .75rem;
     z-index: 3;
 }
+header ul li span {
+    display: none;
+    font-family: "Cinzel", serif;
+    font-size: clamp(1.1rem, 3vw, 1.3rem);
+}
 header ul li:nth-child(1),
 header ul li:nth-child(3),
 header ul li:nth-child(5) {
@@ -294,6 +299,9 @@ footer .section ul li span {
 }
 /* media query's */
 @media screen and (max-width: 1275px) {
+    header ul li span {
+        display: block;
+    }
     .logo {
         display: none;
     }
