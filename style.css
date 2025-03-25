@@ -128,7 +128,7 @@ header ul li:nth-child(5) {
 /* banners */
 .banner {
     margin: 1rem auto;
-    padding: 8rem;
+    padding: 4.5rem;
     text-align: center;
     width: 100%;
     background: var(--clr-darkBlue);
@@ -159,8 +159,7 @@ header ul li:nth-child(5) {
 .banner .btn {
     display: inline-block;
     background: var(--clr-darkTeal);
-    position: relative;
-    top: 3.25rem;
+    margin: 50px auto 0;
     cursor: pointer;
     transform-style: preserve-3d;
     transition: 250ms ease-in-out;
@@ -308,22 +307,40 @@ footer .section ul li span {
     }
     .grid-container {
         grid-template-columns: repeat(1, 1fr);
+        margin-top: 1.5rem;
     }
     .grid-container img {
-        padding: 0 1rem;
+        padding: 0 .75rem;
+        box-shadow: none;
     }
+    .grid-container .left h2,
+    .grid-container .left p,
     .grid-container .right h2,
     .grid-container .right p {
-        margin-left: 1rem;
+        margin-left: .75rem;
+        width: 93%;
     }
 }
 @media screen and (max-width: 945px) {
+    .banner {
+        padding: 3.5rem 1.5rem;
+    }
     footer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-items: flex-start;
     }
     footer ul {
-        padding: 0 2rem;
+        padding: 0 .75rem;
+    }
+}
+@media screen and (max-width: 495px) {
+    .marquee {
+        margin: 30px auto 0;
+        padding: .5rem;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 }
