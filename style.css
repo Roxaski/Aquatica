@@ -21,6 +21,9 @@ body {
     overflow-x: hidden;
     cursor: default;
 }
+.wrapper {
+    max-width: 86rem;
+}
 /* scrollbar */
 ::-webkit-scrollbar {
     width: 8px;
@@ -255,42 +258,6 @@ header ul li:nth-child(5) {
     animation-delay: -5s;
     animation-duration: 20s;
 }
-.shark-container {
-    position: absolute;
-    width: 100%;
-}
-.shark {
-    width: 250px;
-    height: auto;
-    z-index: -1;
-}
-.shark-left {
-    position: relative;
-    bottom: 4.2rem;
-    animation: shark-left 22s linear forwards infinite;
-}
-@keyframes shark-left {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(1500px);
-    }
-}
-.shark-right {
-    position: relative;
-    bottom: 4.95rem;
-    animation: shark-right 27s linear reverse infinite;
-    z-index: -2;
-}
-@keyframes shark-right {
-    0% {
-        transform: translateX(-200%) scaleX(-1);
-    }
-    100% {
-        transform: translateX(1500px) scaleX(-1) rotate(0deg);
-    }
-}
 /* footer */
 footer {
     display: grid;
@@ -319,10 +286,10 @@ footer .section ul li {
     margin: 12px auto;
     cursor: pointer;
 }
-/* media query's
+/* media query's */
 @media screen and (max-width: 768px) {
     .waves {
         height: 50px;
         min-height: 50px;
     }
-} */
+}
