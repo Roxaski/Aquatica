@@ -1,5 +1,7 @@
 # Aquatica
 
+![Aquatica](https://github.com/user-attachments/assets/b8e30793-65f6-421a-abb9-d2d363b5aeee)
+
 ## Welcome to Aquatica
 
 This webpage was created as a way to help to bring attention to the various issues that are plaguing our planets oceans and how it's having a massive impact on all the marine life that inhabits it.
