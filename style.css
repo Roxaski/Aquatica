@@ -319,6 +319,7 @@ header ul li span {
 @keyframes noFishingSign {
     0% {
         transform: translateY(0);
+        transform: rotate(0);
     }
     100% {
         transform: translateY(25px);
