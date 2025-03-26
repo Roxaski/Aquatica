@@ -219,8 +219,8 @@ header ul li span {
         transform: translateX(-100%);
     }
 }
-/* ocean waves animation */
-.waves-container {
+/* animations */
+.waves {
     margin-top: 1rem;
 }
 .waves-svg {
@@ -258,6 +258,44 @@ header ul li span {
 .waves-group > use:nth-child(4) {
     animation-delay: -5s;
     animation-duration: 20s;
+}
+.foreground {
+    position: relative;
+}
+.foreground img {
+    position: absolute;
+}
+.foreground .pier {
+    width: 20%;
+    left: 0;
+    bottom: 0;
+}
+.foreground .boat-container {
+    position: relative;
+    animation: heave 3s alternate infinite;
+    z-index: -1;
+}
+.foreground .boat-container .fishing-boat {
+    width: 20%;
+    right: 0;
+    bottom: -.95rem;
+    animation: fishingBoat 30s alternate infinite;
+}
+@keyframes heave {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(15px);
+    }
+}
+@keyframes fishingBoat {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-750px);
+    }
 }
 /* footer */
 footer {
