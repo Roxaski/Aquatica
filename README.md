@@ -16,4 +16,4 @@ If anyone has any feedback i would greatly appreciate it, as i'm currently learn
 
 ## Image Credits
 
-Massive thankyou to all the amazing photographers at [unsplash](https://unsplash.com/), [pexels](https://www.pexels.com/) and [pixabay](https://pixabay.com/) your photos are incredible.
+Massive thankyou to all the amazing photographers at [unsplash](https://unsplash.com/), [pexels](https://www.pexels.com/) and [pixabay](https://pixabay.com/) your photos are incredible, and thankyou to [brgfx](https://www.freepik.com/author/brgfx) from freepik for their artwork.
