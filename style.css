@@ -297,6 +297,34 @@ header ul li span {
         transform: translateX(-750px);
     }
 }
+.foreground .no-fishing-container {
+    position: relative;
+    animation: floatingSignPost 30s forwards;
+    z-index: -2;
+}
+.foreground .no-fishing {
+    width: 7%;
+    right: 75%;
+    bottom: -1.25rem;
+    animation: noFishingSign 5s alternate infinite;
+}
+@keyframes floatingSignPost {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(750px);
+    }
+}
+@keyframes noFishingSign {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(25px);
+        transform: rotate(15deg);
+    }
+}
 /* footer */
 footer {
     display: grid;
