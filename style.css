@@ -366,6 +366,11 @@ footer .section ul li span {
     font-size: 1rem;
 }
 /* media query's */
+@media screen and (min-width: 1276px) {
+    .foreground .pier {
+        max-width: 290px;
+    }
+}
 @media screen and (max-width: 1275px) {
     header ul li span {
         display: block;
