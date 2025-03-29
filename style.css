@@ -46,7 +46,6 @@ header ul li {
     top: .5rem;
     left: .5rem;
     display: inline-block;
-    font-size: clamp(1.1rem, 3vw, 1.15rem);
     color: var(--clr-white);
     text-transform: capitalize;
     padding-right: .75rem;
@@ -55,7 +54,7 @@ header ul li {
 header ul li span {
     display: none;
     font-family: "Cinzel", serif;
-    font-size: clamp(1.1rem, 3vw, 1.3rem);
+    font-size: clamp(1.1rem, 3vw, 1.5rem);
 }
 /* hero */
 .hero {
