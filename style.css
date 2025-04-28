@@ -358,7 +358,6 @@ footer .section ul li {
     color: var(--clr-lightGrey);
     font-size: 1.05rem;
     margin: 15px auto;
-    cursor: pointer;
 }
 footer .section ul li span {
     color: var(--clr-offWhite);
