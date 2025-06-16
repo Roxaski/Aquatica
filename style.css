@@ -54,7 +54,7 @@ header ul li {
 header ul li span {
     display: none;
     font-family: "Cinzel", serif;
-    font-size: clamp(1.3rem, 3vw, 1.5rem);
+    font-size: clamp(1.15rem, 3vw, 1.5rem);
 }
 /* hero */
 .hero {
