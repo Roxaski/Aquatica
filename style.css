@@ -387,7 +387,7 @@ footer .section ul li span {
     font-size: 1rem;
 }
 /* Media Query's */
-@media screen and (max-width: 1275px) {
+@media screen and (max-width: 1235px) {
     header ul li span {
         display: block;
     }
