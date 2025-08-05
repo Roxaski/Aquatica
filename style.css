@@ -409,9 +409,6 @@ footer .section ul li span {
         margin-left: .75rem;
         width: 93%;
     }
-    .foreground .pier {
-        max-width: 290px;
-    }
     @keyframes fishingBoat {
         0% {
             transform: translateX(0);
