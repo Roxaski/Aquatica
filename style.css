@@ -1,3 +1,25 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Didact Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/didact-gothic-v20-latin-regular.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/cinzel-v25-latin-regular.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Paytone One';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/paytone-one-v24-latin-regular.woff2') format('woff2');
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -23,9 +45,9 @@ body {
     cursor: default;
 }
 .wrapper {
-    max-width: 90rem;
+    max-width: 80rem;
 }
-/* scrollbar */
+/* Scrollbar */
 ::-webkit-scrollbar {
     width: 8px;
     border-radius: 20px;
@@ -37,7 +59,7 @@ body {
 ::-webkit-scrollbar-track {
     background-color: transparent;
 }
-/* header */
+/* Header */
 header ul {
     position: absolute;
 }
@@ -46,7 +68,6 @@ header ul li {
     top: .5rem;
     left: .5rem;
     display: inline-block;
-    font-size: clamp(1.1rem, 3vw, 1.15rem);
     color: var(--clr-white);
     text-transform: capitalize;
     padding-right: .75rem;
@@ -55,9 +76,9 @@ header ul li {
 header ul li span {
     display: none;
     font-family: "Cinzel", serif;
-    font-size: clamp(1.1rem, 3vw, 1.3rem);
+    font-size: clamp(1.15rem, 3vw, 1.5rem);
 }
-/* hero */
+/* Hero */
 .hero {
     position: relative;
 }
@@ -69,14 +90,14 @@ header ul li span {
     rgba(0, 0, 0, 1) 70%, 
     transparent 90%);
 }
-/* logo */
+/* Logo */
 .logo {
     position: absolute;
     top: 50%;
     left: 30.5%;
     transform: translateY(-50%, -50%);
     font-family: "Cinzel", serif;
-    font-size: clamp(7rem, 3vw, 10.5rem);
+    font-size: clamp(6.5rem, 3vw, 10rem);
     visibility: hidden;
     opacity: 0;
     transition: 350ms ease-out;
@@ -87,7 +108,7 @@ header ul li span {
     opacity: 1;
     transform: translateY(72px);
 }
-/* main */
+/* Main */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -120,7 +141,7 @@ header ul li span {
 .grid-container .left p {
     margin-left: 1rem;
 }
-/* banners */
+/* Banners */
 .banner {
     margin: 1rem auto;
     padding: 4.5rem;
@@ -128,8 +149,8 @@ header ul li span {
     width: 100%;
     background: var(--clr-darkBlue);
 }
-.banner.no-margin {
-    margin: 0 auto;
+.banner.pier-margin {
+    margin: 16px auto 0;
 }
 .banner h2 {
     font-family: "Paytone One", serif;
@@ -153,7 +174,7 @@ header ul li span {
     text-transform: capitalize;
     color: var(--clr-offWhite);
 }
-/* donate button */
+/* Donate Button */
 .banner .btn {
     display: inline-block;
     background: var(--clr-darkTeal);
@@ -191,7 +212,7 @@ header ul li span {
     font-weight: 600;
     text-decoration: none;
 }
-/* infinite scroll */
+/* Marquee */
 .marquee {
     display: flex;
     align-items: center;
@@ -222,7 +243,7 @@ header ul li span {
         transform: translateX(-100%);
     }
 }
-/* animations */
+/* Animations */
 .animations {
     overflow: hidden;
 }
@@ -272,7 +293,7 @@ header ul li span {
     position: absolute;
 }
 .foreground .pier {
-    width: 20%;
+    max-width: 255px;
     left: 0;
     bottom: 0;
 }
@@ -283,7 +304,7 @@ header ul li span {
     z-index: -1;
 }
 .foreground .boat-container .fishing-boat {
-    width: 250px;
+    max-width: 250px;
     right: 0;
     bottom: -.95rem;
     animation: fishingBoat 30s alternate infinite;
@@ -310,7 +331,7 @@ header ul li span {
     z-index: -2;
 }
 .foreground .no-fishing {
-    width: 7%;
+    max-width: 95px;
     right: 75%;
     bottom: -1.25rem;
     animation: noFishingSign 5s alternate infinite;
@@ -333,7 +354,7 @@ header ul li span {
         transform: rotate(15deg);
     }
 }
-/* footer */
+/* Footer */
 footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -359,14 +380,13 @@ footer .section ul li {
     color: var(--clr-lightGrey);
     font-size: 1.05rem;
     margin: 15px auto;
-    cursor: pointer;
 }
 footer .section ul li span {
     color: var(--clr-offWhite);
     text-transform: uppercase;
     font-size: 1rem;
 }
-/* media query's */
+/* Media Query's */
 @media screen and (max-width: 1275px) {
     header ul li span {
         display: block;
@@ -389,10 +409,47 @@ footer .section ul li span {
         margin-left: .75rem;
         width: 93%;
     }
+    .foreground .pier {
+        max-width: 290px;
+    }
+    @keyframes fishingBoat {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-650px);
+        }
+    }
+}
+@media screen and (max-width: 1123px) {
+    @keyframes fishingBoat {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-450px);
+        }
+    }
+    @keyframes floatingSignPost {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(500px);
+        }
+    }
 }
 @media screen and (max-width: 945px) {
     .banner {
         padding: 3.5rem 1.5rem;
+    }
+    @keyframes fishingBoat {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-250px);
+        }
     }
     footer {
         display: grid;
@@ -403,13 +460,105 @@ footer .section ul li span {
         padding: 0 .75rem;
     }
 }
-@media screen and (max-width: 495px) {
+@media screen and (max-width: 825px) {
+    @keyframes fishingBoat {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-350px);
+        }
+    }
+}
+@media screen and (max-width: 765px) {
+    @keyframes fishingBoat {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-200px);
+        }
+    }
+    @keyframes floatingSignPost {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(300px);
+        }
+    }
+}
+@media screen and (max-width: 605px) {
+    @keyframes fishingBoat {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50px);
+        }
+    }
+    @keyframes floatingSignPost {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(150px);
+        }
+    }
+}
+@media screen and (max-width: 515px) {
     .marquee {
         margin: 30px auto 0;
         padding: .5rem;
     }
+    @keyframes fishingBoat {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-25px);
+        }
+    }
+    @keyframes floatingSignPost {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(200px);
+        }
+    }
     footer {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (max-width: 435px) {
+    @keyframes fishingBoat {
+        0% {
+            transform: translateX(75px);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+}
+@media screen and (max-width: 400px) {
+    @keyframes fishingBoat {
+        0% {
+            transform: translateX(90px);
+        }
+        100% {
+            transform: translateX(65px);
+        }
+    }
+}
+@media screen and (max-width: 330px) {
+    @keyframes fishingBoat {
+        0% {
+            transform: translateX(95px);
+        }
+        100% {
+            transform: translateX(85px);
+        }
     }
 }
