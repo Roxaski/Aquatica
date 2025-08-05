@@ -3,83 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquatica | Ocean Conservation & Marine Life Protection</title>
+    <meta name="description" content="Discover marine conservation efforts, learn about endangered ocean species, and find ways to protect coral reefs and marine ecosystems. Join the fight against ocean pollution and overfishing">
     <meta name="apple-mobile-web-app-title" content="Aquatica"/>
-    <meta name="description" content="Explore the wonders of the ocean with Aquatica, where we take you on an adventure through the incredible aquatic life and mysteries within ours oceans">
-    <meta name="theme-color" content="#031046">
-    <title>Aquatica | Deep Sea Exploration</title>
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96"/>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
-    <link rel="shortcut icon" href="/favicon.ico"/>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
-    <link rel="manifest" href="/site.webmanifest"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Didact+Gothic&family=Paytone+One&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#062f3d">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <script async defer src="https://kit.fontawesome.com/2d21b2aa33.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <script defer src="./script.js"></script>
 </head>
 <body>
     <div class="wrapper">
-        <!-- header -->
+        <!-- Header -->
         <header>
             <ul>
                 <li><span>aquatica</span></li>
             </ul>
         </header>
-        <!-- hero -->
+
+        <!-- Hero Image -->
         <div class="hero">
-            <img width="1920" height="1080" draggable="false" class="bg" src="./assets/ocean_bg.webp" alt="ocean depths">
+            <img class="bg" fetchpriority="high" draggable="false" 
+            src="./assets/index/ocean_bg_extra_large.webp"
+            srcset="./assets/index/ocean_bg_small.webp 480w,
+                    ./assets/index/ocean_bg_medium.webp 800w,
+                    ./assets/index/ocean_bg_large.webp 1200w,
+                    ./assets/index/ocean_bg_extra_large.webp 1920w"
+            sizes="100vw"
+            alt="ocean depths">
+
             <h1 class="logo">aquatica</h1>
         </div>
+
         <main>
-            <!-- great barrier reef -->
+            <!-- Great Barrier Reef -->
             <section>
-            <div class="grid-container">
-                <div class="left">
-                    <img width="1920" height="1080" draggable="false" src="./assets/great_barrier_reef.webp" alt="great barrier reef">
+                <div class="grid-container">
+                    <div class="left">
+                        <img loading="lazy" draggable="false" 
+                        src="./assets/index/great_barrier_reef_extra_large.webp" 
+                        srcset="./assets/index/great_barrier_reef_small.webp 480w,
+                                ./assets/index/great_barrier_reef_medium.webp 800w,
+                                ./assets/index/great_barrier_reef_large.webp 1200w,
+                                ./assets/index/great_barrier_reef_extra_large.webp 1920w"
+                        sizes="(max-width: 1245px) 1245px,
+                               (max-width: 825px) 825px,
+                               (max-width: 605px) 605px,
+                               (max-width: 435px) 435px"
+                        alt="great barrier reef">
+                    </div>
+                    <div class="right">
+                        <h2>the great barrier reef</h2>
+
+                        <p>The Great Barrier Reef is located in the Coral Sea, which is situated in Australia's northeastern coast. It's truly an incredible site to behold, and it's home to the world's largest collection of coral reefs.</p>
+
+                        <p>Unfortunately however the Great Coral Reef is in danger of extinction, due to changes in the waters temperatures along with poor ocean water quality, which is partly because of pollution and the many changes in our climate over the years.</p>
+
+                        <p>Everyone can make a change by reducing their carbon emissions, and by being respectful of the marine life that inhabits the coral reefs.</p>
+                    </div>
+
+                    <div class="left">
+                        <h2>Home to marine life</h2>
+
+                        <p>The Great Barrier Reef is also the home of over one thousand different species of fish, as well as being home to many different species of coral.</p>
+
+                        <p>Over 400 species of coral can be found at the Great Barrier Reef, and they benefit provide a variety of benefits to the enviroment such as providing a habitat for marine life, helping to mitigate climate change and helping to maintain water quality, by filtrating carbon monoxide.</p>
+
+                        <p>As you can see this wonderful place is important to the preservation of our ocean, and you can help to make a change.</p>
+                    </div>
+                    <div class="right">
+                        <img loading="lazy" draggable="false" 
+                        src="./assets/index/barrier_reef_fish_extra_large.webp" 
+                        srcset="./assets/index/barrier_reef_fish_small.webp 480w,
+                                ./assets/index/barrier_reef_fish_medium.webp 800w,
+                                ./assets/index/barrier_reef_fish_large.webp 1200w,
+                                ./assets/index/barrier_reef_fish_extra_large.webp 1920w"
+                        sizes="(max-width: 1245px) 1245px,
+                               (max-width: 825px) 825px,
+                               (max-width: 605px) 605px,
+                               (max-width: 435px) 435px"
+                        alt="barrier reef fish">
+                    </div>
                 </div>
-                <div class="right">
-                    <h2>the great barrier reef</h2>
-
-                    <p>The Great Barrier Reef is located in the Coral Sea, which is situated in Australia's northeastern coast. It's truly an incredible site to behold, and it's home to the world's largest collection of coral reefs.</p>
-
-                    <p>Unfortunately however the Great Coral Reef is in danger of extinction, due to changes in the waters temperatures along with poor ocean water quality, which is partly because of pollution and the many changes in our climate over the years.</p>
-
-                    <p>Everyone can make a change by reducing their carbon emissions, and by being respectful of the marine life that inhabits the coral reefs.</p>
-                </div>
-
-                <div class="left">
-                    <h2>Home to marine life</h2>
-
-                    <p>The Great Barrier Reef is also the home of over one thousand different species of fish, as well as being home to many different species of coral.</p>
-
-                    <p>Over 400 species of coral can be found at the Great Barrier Reef, and they benefit provide a variety of benefits to the enviroment such as providing a habitat for marine life, helping to mitigate climate change and helping to maintain water quality, by filtrating carbon monoxide.</p>
-
-                    <p>As you can see this wonderful place is important to the preservation of our ocean, and you can help to make a change.</p>
-                </div>
-                <div class="right">
-                    <img width="1920" height="1080" draggable="false" src="./assets/barrier_reef_fish.webp" alt="great barrier reef fish">
-                </div>
-            </div>
             </section>
-            <!-- oceana charity -->
+
+            <!-- Oceana Charity Donations -->
             <section>
                 <div class="banner" id="donate">
                     <h2>oceana</h2>
+
                     <h2>protecting the world's oceans</h2>
+
                     <p>Campaigning to restore our oceans to the way it once was, by increasing marine bio diversity and protecting our oceans for generations to come!</p>
+
                     <div role="button" class="btn" aria-label="button that opens an external link">
                         <a target="_blank" href="https://oceana.org/resources/ways-to-give-donate-now/">donate</a>
                     </div>
                 </div>
             </section>
-            <!-- endangered species -->
+
+            <!-- Endangered Species -->
             <section>
                 <div class="grid-container">
                     <div class="left">
-                        <img width="1920" height="1080" draggable="false" src="./assets/sea_turtle.webp" alt="sea turtle">
+                        <img loading="lazy" draggable="false" 
+                        src="./assets/index/sea_turtle_extra_large.webp"
+                        srcset="./assets/index/sea_turtle_small.webp 480w,
+                                ./assets/index/sea_turtle_medium.webp 800w,
+                                ./assets/index/sea_turtle_large.webp 1200w,
+                                ./assets/index/sea_turtle_extra_large.webp 1920w"
+                        sizes="(max-width: 1245px) 1245px,
+                               (max-width: 825px) 825px,
+                               (max-width: 605px) 605px,
+                               (max-width: 435px) 435px"
+                        alt="sea turtle">
                     </div>
+                    
                     <div class="right">
                         <h2>endangered species</h2>
         
@@ -99,75 +141,117 @@
         
                         <p>Every marine life plays an imporant role to the oceans ecosystem.</p>
                     </div>
+
                     <div class="right">
-                        <img width="1920" height="1080" draggable="false" src="./assets/whale_shark.webp" alt="whale shark">
+                        <img loading="lazy" draggable="false" 
+                        src="./assets/index/whale_shark_extra_large.webp"
+                        srcset="./assets/index/whale_shark_small.webp 480w,
+                                ./assets/index/whale_shark_medium.webp 800w,
+                                ./assets/index/whale_shark_large.webp 1200w,
+                                ./assets/index/whale_shark_extra_large.webp 1920w"
+                        sizes="(max-width: 1245px) 1245px,
+                               (max-width: 825px) 825px,
+                               (max-width: 605px) 605px,
+                               (max-width: 435px) 435px"
+                        alt="whale shark">
                     </div>
                 </div>
             </section>
-            <!-- vulnerable / risk of extinction -->
-            <div class="banner">
-                <h2>marine life</h2>
-                <p>These species are either vulnerable or at risk of extinction!</p>
 
-                <div class="marquee">
-                    <div class="content">
-                        <p>sea turtle</p>
-                        <p>whale shark</p>
-                        <p>dugong</p>
-                        <p>pacific salmon</p>
-                        <p>sea lions</p>
-                        <p>porpoises</p>
-                        <p>bluefin tuna</p>
-                        <p>great white shark</p>
-                        <p>manatee</p>
-                    </div>
-                    <div class="content">
-                        <p>sea turtle</p>
-                        <p>whale shark</p>
-                        <p>dugong</p>
-                        <p>pacific salmon</p>
-                        <p>sea lions</p>
-                        <p>porpoises</p>
-                        <p>bluefin tuna</p>
-                        <p>great white shark</p>
-                        <p>manatee</p>
-                    </div>
-                </div>
-            </div>
-            <!-- looking after our environment -->
-            <div class="grid-container">
-                <div class="left">
-                    <img width="1920" height="1080" draggable="false" src="./assets/fishing_boats.webp" alt="fishing boats">
-                </div>
-                <div class="right">
-                    <h2>risks of overfishing</h2>
-                    
-                    <p>Fishing is one of the worlds largest industries, and it is indeed a very important part of our lives, as fish provide a variety of nutrients, protein and omega-3. But issues start to arise when we fish start to get depleted faster than they can repopulate, which can lead to a wide range of issues, which can eventually even lead to them being a part of the endagered or extintct list.</p>
-
-                    <p>This causes even further issues, where boats inadvertently catch other fish that they aren't procuring which in turn get discarded, and all this can lead to issues with other population of marine life that rely on certain fish to survive and thrive.</p>
-                </div>
-
-                <div class="left">
-                    <h2>ocean pollution</h2>
-
-                    <p>Ocean is a serious issue that affects not only marine life but us too, as it causes not only waste to wash ashore to our beaches, but it also can cause chemical pollution in the ocean, which is detremental to us as a whole but also to all the marine that inhabit the oceans.</p>
-
-                    <p>You may not know this but millions of rubbish washes ashore every year. It's imporant to be aware of this, so that we can not only keep our beaches safe and clean but to ensure that sea life like turtles and seals, don't get tangled up in rubbish which can cause serious harm to them.</p>
-
-                    <p>Keep the beaches clean, always pick the your rubbish and put it in the bin.</p>
-                </div>
-                <div class="right">
-                    <img width="1920" height="1080" draggable="false" src="./assets/beach_pollution.webp" alt="polluted beach">
-                </div>
-            </div>
-            <!-- make a change -->
+            <!-- Vulnerable / Risk of Extinction Species -->
             <section>
-                <div class="banner no-margin">
+                <div class="banner">
+                    <h2>marine life</h2>
+
+                    <p>These species are either vulnerable or at risk of extinction!</p>
+
+                    <div class="marquee">
+                        <div class="content">
+                            <p>sea turtle</p>
+                            <p>whale shark</p>
+                            <p>dugong</p>
+                            <p>pacific salmon</p>
+                            <p>sea lions</p>
+                            <p>porpoises</p>
+                            <p>bluefin tuna</p>
+                            <p>great white shark</p>
+                            <p>manatee</p>
+                        </div>
+
+                        <div class="content">
+                            <p>sea turtle</p>
+                            <p>whale shark</p>
+                            <p>dugong</p>
+                            <p>pacific salmon</p>
+                            <p>sea lions</p>
+                            <p>porpoises</p>
+                            <p>bluefin tuna</p>
+                            <p>great white shark</p>
+                            <p>manatee</p>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- Look After The Environment -->
+            </section>
+                <div class="grid-container">
+                    <div class="left">
+                        <img loading="lazy" draggable="false" 
+                        src="./assets/index/fishing_boats_extra_large.webp"
+                        srcset="./assets/index/fishing_boats_small.webp 480w,
+                                ./assets/index/fishing_boats_medium.webp 800w,
+                                ./assets/index/fishing_boats_large.webp 1200w,
+                                ./assets/index/fishing_boats_extra_large.webp 1920w"
+                        sizes="(max-width: 1245px) 1245px,
+                               (max-width: 825px) 825px,
+                               (max-width: 605px) 605px,
+                               (max-width: 435px) 435px"
+                        alt="fishing boats">
+                    </div>
+
+                    <div class="right">
+                        <h2>risks of overfishing</h2>
+                        
+                        <p>Fishing is one of the worlds largest industries, and it is indeed a very important part of our lives, as fish provide a variety of nutrients, protein and omega-3. But issues start to arise when fish start to get depleted faster than they can repopulate, which can lead to a wide range of issues, which can eventually even lead to them being a part of the endagered or extintct list.</p>
+
+                        <p>This causes even further issues, where boats inadvertently catch other fish that they aren't procuring which in turn get discarded, and all this can lead to issues with other population of marine life that rely on certain fish to survive and thrive.</p>
+                    </div>
+
+                    <div class="left">
+                        <h2>ocean pollution</h2>
+
+                        <p>Ocean pollution is a serious issue that affects not only marine life but us too, as it causes not only waste to wash ashore to our beaches, but it also can cause chemical pollution in the ocean, which is detremental to us as a whole but also to all the marine that inhabit the oceans.</p>
+
+                        <p>You may not know this but millions of rubbish washes ashore every year. It's imporant to be aware of this, so that we can not only keep our beaches safe and clean but to ensure that sea life like turtles and seals, don't get tangled up in rubbish which can cause serious harm to them.</p>
+
+                        <p>Keep the beaches clean, always pick the your rubbish and put it in the bin.</p>
+                    </div>
+
+                    <div class="right">
+                        <img loading="lazy" draggable="false" 
+                        src="./assets/index/beach_pollution_extra_large.webp"
+                        srcset="./assets/index/beach_pollution_small.webp 480w,
+                                ./assets/index/beach_pollution_medium.webp 800w,
+                                ./assets/index/beach_pollution_large.webp 1200w,
+                                ./assets/index/beach_pollution_extra_large.webp 1920w"
+                        sizes="(max-width: 1245px) 1245px,
+                               (max-width: 825px) 825px,
+                               (max-width: 605px) 605px,
+                               (max-width: 435px) 435px"
+                        alt="polluted beach">
+                    </div>
+                </div>
+
+            <!-- Make a Change -->
+            <section>
+                <div class="banner pier-margin">
                     <h2>make a change</h2>
+
                     <p>Only you can a <a href="./index.html#donate"><span>make a change</span></a> to help our oceans ecosystem, not only from the pollution but to help preserve the oceans wildlife, it's not too late to make a difference!</p>
                 </div>
             </section>
-            <!-- animations -->
+
+            <!-- Animations -->
             <div class="animations">
                 <div class="waves">
                     <svg class="waves-svg" viewBox="0 25 150 15" preserveAspectRation="none" shape-rendering="auto">
@@ -183,18 +267,19 @@
                     </svg>
                 </div>
                 <div class="foreground">
-                    <img class="pier" draggable="false" src="./assets/pier.webp" alt="">
+                    <img class="pier" draggable="false" src="./assets/animations/pier.webp" alt="">
     
                     <div class="boat-container">
-                        <img class="fishing-boat" draggable="false" src="./assets/fishing_boat.webp" alt="">
+                        <img class="fishing-boat" draggable="false" src="./assets/animations/fishing_boat.webp" alt="">
                     </div>
     
                     <div class="no-fishing-container">
-                        <img class="no-fishing" draggable="false" src="./assets/no_fishing_sign.webp" alt="">
+                        <img class="no-fishing" draggable="false" src="./assets/animations/no_fishing_sign.webp" alt="">
                     </div>
                 </div>
             </div>
-            <!-- footer -->
+
+            <!-- Footer -->
             <footer>
                 <div class="section">
                     <ul>
