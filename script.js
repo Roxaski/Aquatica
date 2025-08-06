@@ -2,15 +2,16 @@ let logo = document.querySelector('.logo');
 const fishingBoat = document.querySelector('.fishing-boat');
 const noFishing = document.querySelector('.no-fishing');
 
-// The logo appears once the the user scrolls down more than 100px
+/*
+    The logo appears once the the user scrolls down 100px,
+    which in turn will dissapear when the user scrolls back to top of page
+*/ 
 window.addEventListener('scroll', () => {
     if (window.scrollY > 100) {
         logo.classList.add('active');
-    }
-    // the logo dissapears once the user scrolls back to top of page ( when it's less than 5px )
-    else if (window.scrollY < 5) {
+    } else if (window.scrollY < 5) {
         logo.classList.remove('active');
-    }
+    };
 });
 
 // displays the animation when the user is close to the bottom of the page
