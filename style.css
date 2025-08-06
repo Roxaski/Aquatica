@@ -303,11 +303,15 @@ header ul li span {
     width: 100%;
     z-index: -1;
 }
-.foreground .boat-container .fishing-boat {
+.foreground .fishing-boat {
+    opacity: 0;
     max-width: 250px;
     right: 0;
     bottom: -.95rem;
     animation: fishingBoat 30s alternate infinite;
+}
+.foreground .fishing-boat.active {
+    opacity: 1;
 }
 @keyframes heave {
     0% {
@@ -331,10 +335,14 @@ header ul li span {
     z-index: -2;
 }
 .foreground .no-fishing {
+    opacity: 0;
     max-width: 95px;
     right: 75%;
     bottom: -1.25rem;
     animation: noFishingSign 5s alternate infinite;
+}
+.foreground .no-fishing.active {
+    opacity: 1;
 }
 @keyframes floatingSignPost {
     0% {
