@@ -1,20 +1,26 @@
-let logo = document.querySelector('.logo');
+let isLogoDisplaying;
+const displayLogo = document.querySelector('.logo');
 const fishingBoat = document.querySelector('.fishing-boat');
 const noFishing = document.querySelector('.no-fishing');
 
-/*
-    The logo appears once the the user scrolls down 100px,
-    which in turn will dissapear when the user scrolls back to top of page
-*/ 
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 100) {
-        logo.classList.add('active');
-    } else if (window.scrollY < 5) {
-        logo.classList.remove('active');
-    };
-});
+function logoReveal() {
+    // contains the value of the how much the window has scrolled vertically
+    const scrollY = window.scrollY;
 
-// displays the animation when the user is close to the bottom of the page
+    // shows the logo when scrolling more than 100px, and hides the logo when returning to top of page
+    if (scrollY > 100 && !isLogoDisplaying) {
+        displayLogo.classList.add('active');
+        isLogoDisplaying = true;
+    } else if (scrollY < 5 && isLogoDisplaying) {
+        displayLogo.classList.remove('active');
+        isLogoDisplaying = false;
+    };
+};
+
+// calls the function on scroll
+window.addEventListener('scroll', logoReveal);
+
+// triggers the animations when elements are 300px from entering viewport
 const animationLoading = new IntersectionObserver(elements => {
     elements.forEach(img => {
         // checks if the observed element is being intersected
@@ -25,11 +31,7 @@ const animationLoading = new IntersectionObserver(elements => {
             animationLoading.unobserve(img.target);
         };
     });
-    /*
-        adds a margin at the bottom which expands the viewport by 300px,
-        which in turn means that the threshold of 0 will trigger the intersectionObserver,
-        as soon as any part of it enters that 300px rootMargin
-    */
+    // triggers the animaton 300px before the elements enter the viewport by adding a bottom margin
 }, {
     rootMargin: '0px 0px 300px 0px',
     threshold: 0
