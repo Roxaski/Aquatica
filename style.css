@@ -367,32 +367,27 @@ footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
-    width: 100%;
-    height: auto;
     background: var(--clr-lightTeal);
-    padding: 15px 0;
     box-shadow: 2px 2px 50px rgba(0, 0, 0, .7);
+    padding-bottom: .35rem;
 }
 footer .section {
     text-transform: capitalize;
     letter-spacing: .5px;
     z-index: 3;
 }
-footer .section h3 {
-    color: var(--clr-white);
-    font-weight: 400;
-    font-size: clamp(1rem, 3vw, 1.2rem);
-}
 footer .section ul li {
     list-style: none;
     color: var(--clr-lightGrey);
-    font-size: 1.05rem;
-    margin: 15px auto;
+    font-size: .98rem;
+    margin: 20px auto;
+    font-weight: 400;
 }
 footer .section ul li span {
     color: var(--clr-offWhite);
-    text-transform: uppercase;
-    font-size: 1rem;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    letter-spacing: .5px;
 }
 /* Media Query's */
 @media screen and (max-width: 1235px) {
