@@ -32,6 +32,7 @@
     --clr-darkBlue: #08232c;
     --clr-lightTeal: #123642;
     --clr-darkTeal: #062f3d;
+    --clr-congareeBlue: #1f414d;
     --clr-oceanBlue: #384db7;
     --clr-seafoam: #e0e0e8;
 }
@@ -177,13 +178,12 @@ header ul li span {
 /* Donate Button */
 .banner .btn {
     display: inline-block;
-    background: var(--clr-darkTeal);
+    background: var(--clr-congareeBlue);
     margin: 50px auto 0;
     cursor: pointer;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
     transition: 250ms ease-in-out;
-    z-index: 1;
 }
 .banner .btn::before {
     content: '';
@@ -197,7 +197,6 @@ header ul li span {
     -webkit-transform: translateZ(-10px) rotate(13deg);
     cursor: default;
     transition: 250ms ease-in-out;
-    z-index: -1;
 }
 .banner .btn:hover {
     background: var(--clr-oceanBlue);
