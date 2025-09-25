@@ -32,7 +32,7 @@
     --clr-darkBlue: #08232c;
     --clr-lightTeal: #123642;
     --clr-darkTeal: #062f3d;
-    --clr-oceanBlue: #473aac;
+    --clr-oceanBlue: #384db7;
     --clr-seafoam: #e0e0e8;
 }
 body {
@@ -188,9 +188,9 @@ header ul li span {
     content: '';
     position: absolute;
     top: 0;
-    left: -5px;
-    width: 103px;
-    height: 45px;
+    left: -7px;
+    width: calc(100% + 13px); 
+    height: calc(100% + 4px); 
     background-color: var(--clr-oceanBlue);
     transform: translateZ(-10px) rotate(13deg);
     cursor: default;
@@ -206,10 +206,11 @@ header ul li span {
 .banner .btn a {
     display: block;
     color: var(--clr-white);
-    padding: .75rem 1rem;
+    padding: .85rem 1.85rem;
     font-size: 1rem;
+    letter-spacing: .5px;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
 }
 /* Marquee */
@@ -507,6 +508,16 @@ footer .section ul li span {
     }
 }
 @media screen and (max-width: 515px) {
+    .banner .btn::before {
+        width: 100px;
+        left: 10px;
+    }
+    .banner .btn:hover {
+        background: var(--clr-lightTeal);
+    }
+    .banner .btn:hover::before {
+        background-color: var(--clr-oceanBlue);
+    }
     .marquee {
         margin: 30px auto 0;
         padding: .5rem;
