@@ -48,7 +48,6 @@ body {
 .wrapper {
     max-width: 80rem;
 }
-/* Scrollbar */
 ::-webkit-scrollbar {
     width: 8px;
     border-radius: 20px;
@@ -60,7 +59,6 @@ body {
 ::-webkit-scrollbar-track {
     background-color: transparent;
 }
-/* Header */
 header ul {
     position: absolute;
 }
@@ -79,7 +77,6 @@ header ul li span {
     font-family: "Cinzel", serif;
     font-size: clamp(1.15rem, 3vw, 1.5rem);
 }
-/* Hero */
 .hero {
     position: relative;
 }
@@ -91,7 +88,6 @@ header ul li span {
     rgba(0, 0, 0, 1) 70%, 
     transparent 90%);
 }
-/* Logo */
 .logo {
     position: absolute;
     top: 50%;
@@ -109,7 +105,6 @@ header ul li span {
     opacity: 1;
     transform: translateY(72px);
 }
-/* Main */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -142,7 +137,6 @@ header ul li span {
 .grid-container .left p {
     margin-left: 1rem;
 }
-/* Banners */
 .banner {
     margin: 1rem auto;
     padding: 4.5rem;
@@ -175,7 +169,6 @@ header ul li span {
     text-transform: capitalize;
     color: var(--clr-offWhite);
 }
-/* Donate Button */
 .banner .btn {
     display: inline-block;
     background: var(--clr-congareeBlue);
@@ -214,7 +207,6 @@ header ul li span {
     font-weight: 500;
     text-decoration: none;
 }
-/* Marquee */
 .marquee {
     display: flex;
     align-items: center;
@@ -245,7 +237,6 @@ header ul li span {
         transform: translateX(-100%);
     }
 }
-/* Animations */
 .animations {
     overflow: hidden;
 }
@@ -364,7 +355,6 @@ header ul li span {
         transform: rotate(15deg);
     }
 }
-/* Footer */
 footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -391,7 +381,6 @@ footer .section ul li span {
     font-size: 1.1rem;
     letter-spacing: .5px;
 }
-/* Media Query's */
 @media screen and (max-width: 1235px) {
     header ul li span {
         display: block;
