@@ -4,10 +4,10 @@ const fishingBoat = document.querySelector('.fishing-boat');
 const noFishing = document.querySelector('.no-fishing');
 
 function logoReveal() {
-    // contains the value of the how much the window has scrolled vertically
+    // contains the value of how much the window was scrolled
     const scrollY = window.scrollY;
 
-    // shows the logo when scrolling more than 100px, and hides the logo when returning to top of page
+    // displays the logo when scrolling more than 100px, and hides the logo when returning to top of page
     if (scrollY > 100 && !isLogoDisplaying) {
         displayLogo.classList.add('active');
         isLogoDisplaying = true;
@@ -20,7 +20,7 @@ function logoReveal() {
 // calls the function on scroll
 window.addEventListener('scroll', logoReveal);
 
-// triggers the animations when elements are 300px from entering viewport
+// triggers the animation when close to the element
 const animationLoading = new IntersectionObserver(elements => {
     elements.forEach(img => {
         // checks if the observed element is being intersected
@@ -31,12 +31,12 @@ const animationLoading = new IntersectionObserver(elements => {
             animationLoading.unobserve(img.target);
         };
     });
-    // triggers the animaton 300px before the elements enter the viewport by adding a bottom margin
+    // adds margin of 300px in order to trigger the animation 300px before the user gets to it
 }, {
     rootMargin: '0px 0px 300px 0px',
     threshold: 0
 });
 
-// these are the elements which are being observed by intersectionObserver
+// these elements are being observed by intersectionObserver
 animationLoading.observe(fishingBoat);
 animationLoading.observe(noFishing);
