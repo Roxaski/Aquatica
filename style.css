@@ -389,7 +389,7 @@ footer .section ul li span {
         display: none;
     }
     .grid-container {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
         margin-top: 1.5rem;
     }
     .grid-container img {
@@ -530,7 +530,7 @@ footer .section ul li span {
     }
     footer {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
     }
 }
 @media screen and (max-width: 435px) {
