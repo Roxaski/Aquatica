@@ -1,6 +1,6 @@
 # Aquatica
 
-![Aquatica](https://github.com/user-attachments/assets/b8e30793-65f6-421a-abb9-d2d363b5aeee)
+<img width="1920" height="1080" alt="github_read me" src="https://github.com/user-attachments/assets/09eb481f-dacf-41d8-9e96-b1d5b45c6e31" />
 
 ## Welcome to Aquatica
 
