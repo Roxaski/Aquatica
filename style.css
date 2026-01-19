@@ -358,7 +358,6 @@ header ul li span {
 footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
     background: var(--clr-lightTeal);
     box-shadow: 2px 2px 50px rgba(0, 0, 0, .7);
     padding-bottom: .35rem;
@@ -373,6 +372,7 @@ footer .section ul li {
     color: var(--clr-lightGrey);
     font-size: .98rem;
     margin: 20px auto;
+    margin-left: .75rem;
     font-weight: 400;
 }
 footer .section ul li span {
@@ -449,6 +449,9 @@ footer .section ul li span {
     }
     footer ul {
         padding: 0 .75rem;
+    }
+    footer .section ul li {
+        margin-left: 0;
     }
 }
 @media screen and (max-width: 825px) {
