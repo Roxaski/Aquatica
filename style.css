@@ -97,7 +97,7 @@ header ul li span {
     font-size: clamp(6.5rem, 3vw, 10rem);
     visibility: hidden;
     opacity: 0;
-    transition: 350ms ease-out;
+    transition: opacity 350ms ease-out, visibility 350ms ease-out, transform 350ms ease-out;
     z-index: 1;
 }
 .logo.active {
@@ -147,7 +147,8 @@ header ul li span {
 .banner.pier-margin {
     margin: 16px auto 0;
 }
-.banner h2 {
+.banner h2,
+.banner h3 {
     font-family: "Paytone One", serif;
     font-size: clamp(1.5rem, 3vw, 2rem);
     font-weight: 300;
@@ -176,7 +177,7 @@ header ul li span {
     cursor: pointer;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
-    transition: 250ms ease-in-out;
+    transition: background-color 250ms ease-in-out;
 }
 .banner .btn::before {
     content: '';
@@ -189,7 +190,7 @@ header ul li span {
     transform: translateZ(-10px) rotate(13deg);
     -webkit-transform: translateZ(-10px) rotate(13deg);
     cursor: default;
-    transition: 250ms ease-in-out;
+    transition: background-color 250ms ease-in-out;
 }
 .banner .btn:hover {
     background: var(--clr-oceanBlue);
@@ -372,14 +373,22 @@ footer .section ul li {
     color: var(--clr-lightGrey);
     font-size: .98rem;
     margin: 20px auto;
-    margin-left: .75rem;
+    margin-left: 2rem;
     font-weight: 400;
 }
-footer .section ul li span {
+footer .section ul li h3 {
     color: var(--clr-offWhite);
     text-transform: capitalize;
     font-size: 1.1rem;
     letter-spacing: .5px;
+}
+footer .section ul li img {
+    display: inline-block;
+    position: relative;
+    top: .2rem;
+    margin-right: .65rem;
+    width: 1.1rem;
+    height: auto;
 }
 @media screen and (max-width: 1235px) {
     header ul li span {
