@@ -105,6 +105,12 @@ header ul li span {
     opacity: 1;
     transform: translateY(72px);
 }
+.logo .screen-reader-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
