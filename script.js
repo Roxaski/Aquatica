@@ -1,4 +1,4 @@
-const displayTitle = document.querySelector('.logo');
+const displayTitle = document.querySelector('.title');
 const fishingBoat = document.querySelector('.fishing-boat');
 const noFishing = document.querySelector('.no-fishing');
 const heroSection = document.querySelector('.hero');
