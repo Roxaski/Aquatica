@@ -88,7 +88,7 @@ header ul li span {
     rgba(0, 0, 0, 1) 70%, 
     transparent 90%);
 }
-.logo {
+.title {
     position: absolute;
     top: 50%;
     left: 30.5%;
@@ -100,7 +100,7 @@ header ul li span {
     transition: opacity 350ms ease-out, visibility 350ms ease-out, transform 350ms ease-out;
     z-index: 1;
 }
-.logo.active {
+.title.active {
     visibility: visible;
     opacity: 1;
     transform: translateY(72px);
@@ -117,6 +117,7 @@ header ul li span {
     color: var(--clr-white);
     box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
 }
+.grid-container h1,
 .grid-container h2 {
     text-transform: capitalize;
     letter-spacing: .65px;
@@ -129,6 +130,7 @@ header ul li span {
     line-height: 1.6;
     margin: 15px auto 0;
 }
+.grid-container .right h1,
 .grid-container .right h2,
 .grid-container .right p {
     margin-right: 1rem;
@@ -394,7 +396,7 @@ footer .section ul li img {
     header ul li span {
         display: block;
     }
-    .logo {
+    .title {
         display: none;
     }
     .grid-container {
@@ -407,6 +409,7 @@ footer .section ul li img {
     }
     .grid-container .left h2,
     .grid-container .left p,
+    .grid-container .right h1,
     .grid-container .right h2,
     .grid-container .right p {
         margin-left: .75rem;
