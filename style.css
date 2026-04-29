@@ -573,3 +573,63 @@ footer .section ul li img {
         }
     }
 }
+@media (prefers-reduced-motion: reduce) {
+    .title {
+        transition: none;
+    }
+    .marquee .content {
+        display: block;
+        text-align: left;
+        padding-inline: 0;
+        animation: none;
+    }
+    .marquee .content:nth-child(2) {
+        display: none;
+    }
+    .foreground .no-fishing {
+        right: 48%;
+        bottom: -.75rem;
+    }
+    .waves-group > use,
+    .foreground .boat-container,
+    .foreground .fishing-boat,
+    .foreground .no-fishing-container,
+    .foreground .no-fishing {
+        animation: none;
+    }
+}
+@media (prefers-reduced-motion: reduce) and (max-width: 545px) {
+    .foreground .fishing-boat {
+        right: 5%;
+    }
+    .foreground .no-fishing {
+        right: 5%;
+        bottom: 1.7rem;
+    }
+}
+@media (prefers-reduced-motion: reduce) and (max-width: 425px) {
+    .foreground .fishing-boat {
+        right: -5%;
+    }
+    .foreground .no-fishing {
+        right: 32%;
+        bottom: 1.4rem;
+    }
+}
+@media (prefers-reduced-motion: reduce) and (max-width: 390px) {
+    .foreground .fishing-boat {
+        right: -21%;
+    }
+    .foreground .no-fishing {
+        right: 30%;
+    }
+}
+@media (prefers-reduced-motion: reduce) and (max-width: 345px) {
+    .foreground .fishing-boat {
+        right: -25%;
+    }
+    .foreground .no-fishing {
+        right: 18%;
+        bottom: 1.8rem;
+    }
+}
