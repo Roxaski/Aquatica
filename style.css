@@ -409,6 +409,10 @@ footer .section ul li img {
             transform: translateX(-650px);
         }
     }
+    footer .section h3,
+    footer .section ul li {
+        margin: .25rem 0 .75rem .75rem;
+    }
 }
 @media screen and (max-width: 1123px) {
     @keyframes fishingBoat {
