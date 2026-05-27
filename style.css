@@ -40,14 +40,12 @@
 body {
     width: 100%;
     height: 100vh;
+    max-width: 90rem;
     font-family: "Didact Gothic", serif;
     color: var(--clr-white);
     background-color: var(--clr-darkTeal);
     overflow-x: hidden;
     cursor: default;
-}
-.wrapper {
-    max-width: 80rem;
 }
 header {
     display: none;
