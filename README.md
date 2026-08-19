@@ -1,4 +1,6 @@
-<img width="1920" height="1080" alt="github_read me" src="https://github.com/user-attachments/assets/09eb481f-dacf-41d8-9e96-b1d5b45c6e31" />
+![Aquatica](https://github.com/user-attachments/assets/f6fa12e8-fad9-4136-a3aa-338333384275#gh-light-mode-only)
+
+![Aquatica](https://github.com/user-attachments/assets/3658ccdc-4af2-4409-a0e9-4702a21976ee#gh-dark-mode-only)
 
 ## Welcome to Aquatica
 
