@@ -85,7 +85,7 @@ header p {
 .title.active {
     visibility: visible;
     opacity: 1;
-    transform: translateY(72px);
+    transform: translateY(4.5rem);
 }
 .grid-container {
     display: grid;
@@ -111,7 +111,7 @@ header p {
 .grid-container p {
     font-size: clamp(1rem, 3vw, 1.1rem);
     line-height: 1.6;
-    margin: 15px auto 0;
+    margin: .93rem auto 0;
 }
 .grid-container .right h1,
 .grid-container .right h2,
@@ -130,7 +130,7 @@ header p {
     background: var(--clr-darkBlue);
 }
 .banner.pier-margin {
-    margin: 16px auto 0;
+    margin: 1rem auto 0;
 }
 .banner h2,
 .banner h3 {
@@ -144,7 +144,7 @@ header p {
     font-size: clamp(1.12rem, 3vw, 1.3rem);
     letter-spacing: .5px;
     line-height: 1.8;
-    margin: 10px auto;
+    margin: .62rem auto;
 }
 .banner p span {
     color: var(--clr-white);
@@ -158,7 +158,7 @@ header p {
 .banner .btn {
     display: inline-block;
     background: var(--clr-congareeBlue);
-    margin: 50px auto 0;
+    margin: 3.1rem auto 0;
     cursor: pointer;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
@@ -168,12 +168,12 @@ header p {
     content: '';
     position: absolute;
     top: 0;
-    left: -7px;
-    width: calc(100% + 13px);
-    height: calc(100% + 4px);
+    left: -.43rem;
+    width: calc(100% + .81rem);
+    height: calc(100% + .25rem);
     background-color: var(--clr-oceanBlue);
-    transform: translateZ(-10px) rotate(13deg);
-    -webkit-transform: translateZ(-10px) rotate(13deg);
+    transform: translateZ(-.62rem) rotate(13deg);
+    -webkit-transform: translateZ(-.62rem) rotate(13deg);
     cursor: default;
     transition: background-color 250ms ease-in-out;
 }
@@ -197,7 +197,7 @@ header p {
     display: flex;
     align-items: center;
     width: 100%;
-    margin: 50px auto 0;
+    margin: 3.1rem auto 0;
     border-top: solid 1.5px var(--clr-offWhite);
     border-bottom: solid 1.5px var(--clr-offWhite);
     padding: 1rem;
@@ -205,8 +205,8 @@ header p {
 }
 .marquee .content {
     display: flex;
-    column-gap: 24px;
-    padding-inline: 12px;
+    column-gap: 1.5rem;
+    padding-inline: .75rem;
     align-items: center;
     animation: infinite-scroll 50s linear reverse infinite;
 }
@@ -232,9 +232,9 @@ header p {
 .waves-svg {
     position: relative;
     width: 100%;
-    margin-bottom: -5px;
-    min-height: 100px;
-    max-height: 150px;
+    margin-bottom: -.31rem;
+    min-height: 6.25rem;
+    max-height: 9.3rem;
     z-index: -1;
 }
 .waves-group > use {
@@ -242,10 +242,10 @@ header p {
 }
 @keyframes waves {
     0% {
-        transform: translate3d(-90px, 0, 0);
+        transform: translate3d(-5.6rem, 0, 0);
     }
     100% {
-        transform: translate3d(85px, 0, 0);
+        transform: translate3d(5.3rem, 0, 0);
     }
 }
 .waves-group > use:nth-child(1) {
@@ -272,7 +272,7 @@ header p {
     position: absolute;
 }
 .foreground .pier {
-    max-width: 255px;
+    max-width: 15.9rem;
     left: 0;
     bottom: 0;
 }
@@ -284,7 +284,7 @@ header p {
 }
 .foreground .fishing-boat {
     opacity: 0;
-    max-width: 250px;
+    max-width: 15.6rem;
     right: 0;
     bottom: -.95rem;
     animation: fishingBoat 30s alternate infinite;
@@ -297,7 +297,7 @@ header p {
         transform: translateY(0);
     }
     100% {
-        transform: translateY(15px);
+        transform: translateY(.93rem);
     }
 }
 @keyframes fishingBoat {
@@ -305,7 +305,7 @@ header p {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-750px);
+        transform: translateX(-46.8rem);
     }
 }
 .foreground .no-fishing-container {
@@ -315,7 +315,7 @@ header p {
 }
 .foreground .no-fishing {
     opacity: 0;
-    max-width: 95px;
+    max-width: 5.9rem;
     right: 75%;
     bottom: -1.25rem;
     animation: noFishingSign 5s alternate infinite;
@@ -328,7 +328,7 @@ header p {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(750px);
+        transform: translateX(46.8rem);
     }
 }
 @keyframes noFishingSign {
@@ -337,7 +337,7 @@ header p {
         transform: rotate(0);
     }
     100% {
-        transform: translateY(25px);
+        transform: translateY(1.5rem);
         transform: rotate(15deg);
     }
 }
@@ -406,7 +406,7 @@ footer .section ul li img {
             transform: translateX(0);
         }
         100% {
-            transform: translateX(-650px);
+            transform: translateX(-40.6rem);
         }
     }
     footer .section h3,
@@ -420,7 +420,7 @@ footer .section ul li img {
             transform: translateX(0);
         }
         100% {
-            transform: translateX(-450px);
+            transform: translateX(-28.1rem);
         }
     }
     @keyframes floatingSignPost {
@@ -428,7 +428,7 @@ footer .section ul li img {
             transform: translateX(0);
         }
         100% {
-            transform: translateX(500px);
+            transform: translateX(31.25rem);
         }
     }
 }
@@ -441,7 +441,7 @@ footer .section ul li img {
             transform: translateX(0);
         }
         100% {
-            transform: translateX(-250px);
+            transform: translateX(-15.6rem);
         }
     }
     footer {
@@ -456,7 +456,7 @@ footer .section ul li img {
             transform: translateX(0);
         }
         100% {
-            transform: translateX(-350px);
+            transform: translateX(-21.8rem);
         }
     }
 }
@@ -466,7 +466,7 @@ footer .section ul li img {
             transform: translateX(0);
         }
         100% {
-            transform: translateX(-200px);
+            transform: translateX(-12.5rem);
         }
     }
     @keyframes floatingSignPost {
@@ -474,7 +474,7 @@ footer .section ul li img {
             transform: translateX(0);
         }
         100% {
-            transform: translateX(300px);
+            transform: translateX(18.75rem);
         }
     }
 }
@@ -484,7 +484,7 @@ footer .section ul li img {
             transform: translateX(0);
         }
         100% {
-            transform: translateX(-50px);
+            transform: translateX(-3.1rem);
         }
     }
     @keyframes floatingSignPost {
@@ -492,14 +492,14 @@ footer .section ul li img {
             transform: translateX(0);
         }
         100% {
-            transform: translateX(150px);
+            transform: translateX(9.3rem);
         }
     }
 }
 @media screen and (max-width: 515px) {
     .banner .btn::before {
-        width: 100px;
-        left: 10px;
+        width: 6.25rem;
+        left: .625rem;
     }
     .banner .btn:hover {
         background: var(--clr-lightTeal);
@@ -508,7 +508,7 @@ footer .section ul li img {
         background-color: var(--clr-oceanBlue);
     }
     .marquee {
-        margin: 30px auto 0;
+        margin: 1.8rem auto 0;
         padding: .5rem;
     }
     @keyframes fishingBoat {
@@ -516,7 +516,7 @@ footer .section ul li img {
             transform: translateX(0);
         }
         100% {
-            transform: translateX(-25px);
+            transform: translateX(-1.5rem);
         }
     }
     @keyframes floatingSignPost {
@@ -524,7 +524,7 @@ footer .section ul li img {
             transform: translateX(0);
         }
         100% {
-            transform: translateX(200px);
+            transform: translateX(12.5rem);
         }
     }
     footer {
@@ -535,7 +535,7 @@ footer .section ul li img {
 @media screen and (max-width: 435px) {
     @keyframes fishingBoat {
         0% {
-            transform: translateX(75px);
+            transform: translateX(4.6rem);
         }
         100% {
             transform: translateX(0);
@@ -545,20 +545,20 @@ footer .section ul li img {
 @media screen and (max-width: 400px) {
     @keyframes fishingBoat {
         0% {
-            transform: translateX(90px);
+            transform: translateX(5.6rem);
         }
         100% {
-            transform: translateX(65px);
+            transform: translateX(4rem);
         }
     }
 }
 @media screen and (max-width: 330px) {
     @keyframes fishingBoat {
         0% {
-            transform: translateX(95px);
+            transform: translateX(5.9rem);
         }
         100% {
-            transform: translateX(85px);
+            transform: translateX(5.3rem);
         }
     }
 }
